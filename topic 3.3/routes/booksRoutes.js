@@ -11,6 +11,7 @@ router.delete("/:id", booksController.deleteBook);
 
 // Routes جديدة للكتب المتاحة
 router.get("/available/not-in", booksController.getAvailableBooks);
+
 router.get("/available/by-status", booksController.getAvailableBooksByStatus);
 
 

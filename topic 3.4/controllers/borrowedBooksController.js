@@ -140,7 +140,6 @@ exports.borrowBook = async (req, res) => {
         });
     }
     const borrowRecord = await BorrowedBook.borrowBook(reader_id, book_id);
-
     res.status(201).json({
         success: true,
         message: `Book "${book.title}" borrowed successfully by ${reader.reader_name}`,
@@ -150,7 +149,7 @@ exports.borrowBook = async (req, res) => {
         book_title: book.title,
         borrow_date: borrowRecord.borrow_date
         }
-   });
+    });
     } catch (error) {
     res.status(500).json({
         success: false,
