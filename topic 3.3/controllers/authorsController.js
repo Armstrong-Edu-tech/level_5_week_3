@@ -1,5 +1,4 @@
-const Author = require("../models/authorModel");
-
+const Author = require("../../topic 3.3/models/authorModel");
 // جلب كل المؤلفين
 exports.getAllAuthors = async (req, res) => {
     try {

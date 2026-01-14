@@ -1,6 +1,6 @@
 const BorrowedBook = require("../models/borrowedBookModel");
-const Book = require("../models/bookModel");
-
+const Reader = require("../../topic 3.4/models/readerModel");
+const Book = require("../../topic 3.3/models/bookModel");
 exports.getAllBorrowedBooks = async (req, res) => {
     try {
     const borrowedBooks = await BorrowedBook.getAll();

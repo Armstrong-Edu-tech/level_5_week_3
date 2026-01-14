@@ -1,4 +1,4 @@
-const pool = require("../config/db");
+const pool = require("../../config/db");
 const Book = {
     getAll: async () => {
     const result = await pool.query("SELECT * FROM Books");

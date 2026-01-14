@@ -4,10 +4,10 @@ const app = express();
 // Middleware  JSON
 app.use(express.json());
 //  Routes
-const booksRoutes = require("./routes/booksRoutes");
-const authorsRoutes = require("./routes/authorsRoutes");
-const readersRoutes = require("./routes/readersRoutes");
-const borrowedBooksRoutes = require("./routes/borrowedBooksRoutes");
+const booksRoutes = require("./topic 3.3/routes/booksRoutes");
+const authorsRoutes = require("./topic 3.3/routes/authorsRoutes");
+const readersRoutes = require("./topic 3.4/routes/readersRoutes");
+const borrowedBooksRoutes = require("./topic 3.4/routes/borrowedBooksRoutes");
 //  Routes
 app.use("/api/books", booksRoutes);
 app.use("/api/authors", authorsRoutes);
